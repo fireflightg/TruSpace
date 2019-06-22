@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Download truspace</title>
+	
+	<style type="text/css">
+		 a {
+  
+  background: transparent;
+  color: #fff;
+  border: 1px solid #5d8ffc;
+  border-radius: 5px;
+  padding: 15px;
+  display: block;
+  width: 23%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  text-align: center;
+}
+
+a:hover, #Signup:hover {
+  background: #fff;
+  color: #5d8ffc;
+  border: 1px solid #5d8ffc;
+  cursor: pointer;
+		}
+		body{
+			background-image: url(https://pixabay.com/get/55e6d54b4a50a514f6d1867dda6d49214b6ac3e45657704972297cdd91/galaxy-3608029_1920.jpg);
+			background-size: cover;
+		}
+		h2,p{
+			color: white;
+			 font-family: 'Nunito', sans-serif;
+			 
+			 text-align: center;
+
+		}
+	</style>
+	<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<script async="async" src="https://www.google.com/adsense/search/ads.js"></script>
+
+<!-- other head elements from your page -->
+
+<script type="text/javascript" charset="utf-8">
+(function(g,o){g[o]=g[o]||function(){(g[o]['q']=g[o]['q']||[]).push(
+  arguments)},g[o]['t']=1*new Date})(window,'_googCsa');
+</script>
+
+</head>
+<body onload="document.getElementById('Download').style.display = 'none';">
+	
+<p style="color: white; font-size: 40px;" class="item animated fadeInUp"  id="oof">Wait </p>
+<p style="color: white; font-size: 20px;"> Support Saahib Mohammed</p>
+<a class="item animated fadeInDown" id="Download" style="margin: 0 auto; margin-top: 500px; font-family: 'Nunito', sans-serif; font-size:  20px;" href="TruSpace.rar" download> Download </a>
+	<div id='afscontainer1'></div>
+
+<script type="text/javascript" charset="utf-8">
+
+  var pageOptions = {
+    "pubId": "pub-9616389000213823", // Make sure this the correct client ID!
+    "query": "hotels",
+    "adPage": 1
+  };
+
+  var adblock1 = {
+    "container": "afscontainer1",
+    "width": "700",
+    "number": 2
+  };
+
+  _googCsa('ads', pageOptions, adblock1);
+
+</script>
+<script src="countdown.js"></script>
+<script>
+	window.onload = function timer() {
+		// body...
+	
+	var p = document.getElementById("oof")
+	var date = new Date();
+	const add = new Date().getSeconds();
+	const ate = date.setSeconds(add + 9);
+	var x  = true 
+	if(x == true){
+		document.getElementById('Download').style.display = 'none';
+	
+ countdown(ate,function(ts) {
+ 	if(ts != 0){
+      p.innerText = ts.toString();
+ 	}
+ 	else{
+ 		document.getElementById('Download').style.display = 'block';
+ 		document.getElementById('oof').style.display = 'none';
+ 		x = false;
+
+ 	}
+    },countdown.SECONDS);
+}
+else{
+return;
+}
+}
+</script>
+</body>
+</html>
